@@ -27,9 +27,9 @@ for (let i = 0; i < 5; i++) {
 
 
 function hideNumbersShowForm() {
-casualNumbers.classList.add("d-none");
-formSaver.classList.remove("d-none");
-formSaver.classList.add("d-flex");
+    casualNumbers.classList.add("d-none");
+    formSaver.classList.remove("d-none");
+    formSaver.classList.add("d-flex");
 }
 
 wholeForm.addEventListener('submit', (event) => {
@@ -39,9 +39,16 @@ wholeForm.addEventListener('submit', (event) => {
     inputsUtenteArray.push(parseInt(inputs2.value));
     inputsUtenteArray.push(parseInt(inputs3.value));
     inputsUtenteArray.push(parseInt(inputs4.value));
-    
-    if (arrayOfNumbers.includes(inputsUtenteArray[0]) && arrayOfNumbers.includes(inputsUtenteArray[1])) {
-        console.log('Oh yeah!');
+
+    if (arrayOfNumbers.includes(inputsUtenteArray[0]) && arrayOfNumbers.includes(inputsUtenteArray[1]) 
+    && arrayOfNumbers.includes(inputsUtenteArray[2]) && arrayOfNumbers.includes(inputsUtenteArray[3]) && 
+    arrayOfNumbers.includes(inputsUtenteArray[4])) {
+        console.log('Esatto!');
+    }
+
+    else{
+        console.log('Sbagliato! :(');
+        
     }
     
 })
