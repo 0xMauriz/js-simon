@@ -12,6 +12,9 @@ const inputsUtenteArray = [];
 const arrayOfNumbers = [];
 
 
+let rightNumbersCount = 5;
+
+
 
 setTimeout(hideNumbersShowForm, 3000);
 
@@ -42,14 +45,20 @@ wholeForm.addEventListener('submit', (event) => {
 
 
     for (let i = 0; i < 5; i++) {
+
+
         if (arrayOfNumbers.includes(inputsUtenteArray[i])) {
             console.log(`Il ${i + 1}° numero inserito è corretto!`);
         }
 
         else {
             console.log(`Il ${i + 1}° numero inserito è sbagliato!`);
+            rightNumbersCount--;
         }
     }
+
+    console.log(rightNumbersCount);
+    
 
 //    if (arrayOfNumbers.includes(inputsUtenteArray[0]) && arrayOfNumbers.includes(inputsUtenteArray[1]) 
 //    && arrayOfNumbers.includes(inputsUtenteArray[2]) && arrayOfNumbers.includes(inputsUtenteArray[3]) && 
