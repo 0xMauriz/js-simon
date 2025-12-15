@@ -40,18 +40,30 @@ wholeForm.addEventListener('submit', (event) => {
     inputsUtenteArray.push(parseInt(inputs3.value));
     inputsUtenteArray.push(parseInt(inputs4.value));
 
-    if (arrayOfNumbers.includes(inputsUtenteArray[0]) && arrayOfNumbers.includes(inputsUtenteArray[1]) 
-    && arrayOfNumbers.includes(inputsUtenteArray[2]) && arrayOfNumbers.includes(inputsUtenteArray[3]) && 
-    arrayOfNumbers.includes(inputsUtenteArray[4])) {
-        console.log('Esatto!');
+
+    for (let i = 0; i < 5; i++) {
+        if (arrayOfNumbers.includes(inputsUtenteArray[i])) {
+            console.log(`Il ${i + 1}° numero inserito è corretto!`);
+        }
+
+        else {
+            console.log(`Il ${i + 1}° numero inserito è sbagliato!`);
+        }
     }
 
-    else{
-        console.log('Sbagliato! :(');
+//    if (arrayOfNumbers.includes(inputsUtenteArray[0]) && arrayOfNumbers.includes(inputsUtenteArray[1]) 
+//    && arrayOfNumbers.includes(inputsUtenteArray[2]) && arrayOfNumbers.includes(inputsUtenteArray[3]) && 
+//    arrayOfNumbers.includes(inputsUtenteArray[4])) {
+//        console.log('Esatto!');
+//    }
+
+//    else{
+//        console.log('Sbagliato! :(');
         
-    }
+//   }
     
-})
+}
+)
 
 
 
