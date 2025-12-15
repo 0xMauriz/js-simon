@@ -16,7 +16,7 @@ let rightNumbersCount = 5;
 
 
 
-setTimeout(hideNumbersShowForm, 3000);
+setTimeout(hideNumbersShowForm, 30000);
 
 for (let i = 0; i < 5; i++) {
     arrayOfNumbers.push(inrangeRandomNumberGenerator(1, 50));
